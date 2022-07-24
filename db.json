@@ -1,0 +1,16 @@
+{
+  "courseList": [
+    {
+      "courseName": "Genetic",
+      "courseProf": "Ali",
+      "courseDay": "Sunday",
+      "id": 4
+    }
+  ],
+  "": [
+    {}
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

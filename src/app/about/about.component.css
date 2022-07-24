@@ -1,0 +1,30 @@
+.member_item{
+    overflow:hidden;
+}
+.member_cap{
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color:  #acbacc8e ;
+opacity: 0;
+transition: all 1s;
+ 
+}
+
+.member_item:hover .member_cap{
+    opacity: 1;
+}
+.member_item:hover .member{
+    transform: scale(1.2,1.2);
+}
+ .team-details {
+
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+ }
+
+.line{
+    height: 3px;
+}

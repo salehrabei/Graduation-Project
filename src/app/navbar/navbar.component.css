@@ -1,0 +1,29 @@
+
+.navbar-brand{
+    /* color: #fff!important; */
+    font-size: 30px!important;
+    font-weight: 700!important;
+    /* color: white; */
+}
+
+
+.nav-item .nav-link {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    /* color: white!important; */
+
+    
+}
+.nav-item .nav-link .active{
+    color: #675c85 !important;
+}
+
+.navbar .navbar-nav>li>a:hover{
+    color: #675c85 !important
+}
+.navbar{
+    background-color: whitesmoke;
+}

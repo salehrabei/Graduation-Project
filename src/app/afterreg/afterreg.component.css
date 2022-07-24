@@ -1,0 +1,20 @@
+.sss{
+  
+    box-shadow: 2px 1px 1px #0078ff;
+    border: 25px solid whitesmoke;
+    background-color: whitesmoke;
+    
+}
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+.btn1
+{
+    border-radius: 60px;
+    border-color:rgba(15, 91, 179, 0.7);
+    color: rgb(26, 24, 24);
+   margin-left: 100px;
+}

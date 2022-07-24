@@ -1,0 +1,36 @@
+
+
+.logo{
+    width:150px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+}
+.footer-copyright{
+    background: #1a1a1a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+color: white;
+}
+ .copyright a {
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    
+}
+.copyright{
+    margin-left: 300px!important;
+}
+.contact2{
+    
+    
+    background-image: url(../../assets/dotted-map.png);
+        background-color:#222;
+        background-size: contain;
+        background-position: center center;
+        color:#928787;
+        font-family: "Poppins", sans-serif;
+    
+}

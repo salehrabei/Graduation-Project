@@ -1,0 +1,97 @@
+<!-- <mat-toolbar>
+    <mat-toolbar-row>
+        <app-navbar></app-navbar>
+
+        <div *ngIf="isLogin" class="bgcolor w-100"><i (click)="opened=!opened" class="icon text-white fas fa-list-ul"></i></div>
+
+
+    </mat-toolbar-row>
+</mat-toolbar> -->
+<!-- <mat-sidenav-container  class="example-container "> -->
+    <!-- <mat-sidenav  *ngIf="isLogin"  [(opened)]="opened" mode="side">
+      
+       <ul class="list-unstyled mt-3 ms-3">
+        <li><img [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="  iside  rounded-pill " src="../../assets/unnamed.gif" alt="profile picture"> </li>
+       
+        </ul>
+        <ul class=" list-unstyled  p-2 ">
+        
+            <li>
+              <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+
+                <a class="text-decoration-none text-black" [routerLink]="['/home']" routerLinkActive="router-link-active">
+                    Dashboard </a>
+
+            </li>
+            <li class="mt-3">
+              <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+
+                <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> My
+                    Courses </a>
+
+            </li>
+            <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                      Genetic Algorithms </a>
+  
+              </li>
+              <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                     Embdeed Systems </a>
+  
+              </li>
+              <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                      Theory Of Computation
+                     </a>
+  
+              </li>
+              <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                   Image Processing</a>
+  
+              </li>
+              
+              <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                      Networks 1 </a>
+  
+              </li>
+               <div class="line"></div> 
+              <li class="mt-3">
+                <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"></i>
+
+  
+                  <a class="text-decoration-none text-black " [routerLink]="['/courses']" routerLinkActive="router-link-active"> 
+                    Graduation Project </a>
+  
+              </li>
+              <li class="mt-3">
+                <i class="icon fa fa-arrow-alt-circle-down fa-fw " aria-hidden="true"></i>
+                
+                <a (click)=" this._AuthService.logout();" class="text-black text-decoration-none" routerLink="login" routerLinkActive="active"> Logout</a>
+            </li> 
+        </ul>
+
+
+    </mat-sidenav>
+    <mat-sidenav-content class="bg">
+        <router-outlet></router-outlet>
+
+
+    </mat-sidenav-content>
+</mat-sidenav-container> -->
+<!-- <app-footer></app-footer> -->
+<app-navbar></app-navbar>
+<router-outlet></router-outlet>
+<app-footer></app-footer>

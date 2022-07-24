@@ -1,0 +1,35 @@
+.e{
+    width: 20%;
+}
+.s:hover{
+    background-color:  #acbaccc0 !important;
+   width: 20%;
+}
+
+.about-image
+{
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+   
+}
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+} 
+h1{
+   
+    text-align: center;
+}
+.input{
+    text-align: center;
+}
+
+.input h3{
+    font-size: 50px;
+   /* fon
+   t-family: serif; */
+} 
+.b:hover{
+    background-color:  #acbaccc0 !important;
+}

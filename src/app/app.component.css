@@ -1,0 +1,29 @@
+mat-sidenav-container{
+    /* height: 20px; */
+}
+mat-sidenav{
+    /* width: 250px; */
+    background-color: white;
+    
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    /* position: fixed; */
+}
+.fa {
+    /* font-size: 60px; */
+color: #131722;
+
+}
+/* .line{
+    width:100px;
+    height: 5px;
+    background-color: #131722;
+} */
+.iside{
+    width: 50px;
+    cursor: pointer;
+}
+.bg{
+    background-color: #131722;
+    color: white;
+}

@@ -1,0 +1,124 @@
+<div *ngIf="access" class="container-fluid ab">
+  <div class="row d-flex flex-column">
+    
+
+    <div class="col-md-6 ">
+      <table class="table">
+        <tbody>
+          <tr>
+            <td class="fw-bolder"> Name:</td>
+            <td>Esraa Tarek
+            </td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">Email:</td>
+            <td>Esraatarek2000@gmail.com</td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">Department:</td>
+            <td> Computer Science </td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">Level:</td>
+            <td>4</td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">Hours:</td>
+            <td>80</td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">Class:</td>
+            <td>1</td>
+
+          </tr>
+          <tr>
+            <td class="fw-bolder">GPA:</td>
+            <td>3.00</td>
+
+          </tr>
+
+        </tbody>
+      </table>
+  
+      <button class="btn btn-primary w-25" (click)="openDialog()">Register</button>
+
+    </div>
+   
+
+
+    <div class=" col-md-6 m-auto mb-5">
+      <div class="mt-5">
+        <mat-form-field appearance="standard">
+          <mat-label>Filter</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+        </mat-form-field>
+
+        <div class="mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource" matSort>
+
+            <!-- ID Column -->
+            <ng-container matColumnDef="courseName">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Name </th>
+              <td mat-cell *matCellDef="let row"> {{row.courseName}} </td>
+            </ng-container>
+
+            <!-- Progress Column -->
+            <ng-container matColumnDef="courseProf">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Prof </th>
+              <td mat-cell *matCellDef="let row"> {{row.courseProf}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="courseDay">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> Course Day </th>
+              <td mat-cell *matCellDef="let row"> {{row.courseDay}} </td>
+            </ng-container>
+            <ng-container matColumnDef="hours">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header> hours </th>
+              <td mat-cell *matCellDef="let row"> 3 </td>
+            </ng-container>
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef mat-sort-header>action </th>
+              <td mat-cell *matCellDef="let row">
+                <button class="btn btn-light border" (click)="editCourse(row)">
+                  edit
+                </button>
+                <button class="btn btn-light" (click)="deleteCourse(row)">
+                  delete
+                </button>
+
+
+            </ng-container>
+
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            <!-- Row shown when there is no matching data. -->
+            <tr class="mat-row" *matNoDataRow>
+              <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+            </tr>
+          </table>
+
+          <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div *ngIf="!access">
+
+  <div class="alert alert-info">
+    <p>registration not allowed yet</p>
+    <button class="btn btn-secondary" ><a class="btn" href="http://localhost/registartion%20course/onlinecourse/index.php">Register</a></button>
+  </div>
+</div>   

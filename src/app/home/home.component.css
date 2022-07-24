@@ -1,0 +1,171 @@
+h1{
+   
+    text-align: center;
+}
+.input{
+    text-align: center;
+}
+.input h3{
+    font-size: 50px;
+   /* font-family: serif; */
+} 
+.line-mf {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+} 
+
+.ab{
+   text-align: center;
+    /* border: 1px solid whitesmoke; */
+  padding: 10px;
+  box-shadow: 1px 1px 1px #e9dbdb;
+  border-radius: 15px;
+  margin-left: px;
+}
+.ab img{
+   
+    width:200px;
+    height: 180px;
+    margin-left: 4px;
+    transition: all 1s;
+
+}
+/* .bgcolor{
+    background-color: #131722 !important;
+}
+.color{
+    color: aliceblue;
+} */
+.ab:hover{
+    background-color:  #acbaccc0 !important;
+   
+}
+.ab:hover img{
+    transform: scale(1.1,1.1);
+
+}
+.carousel-caption{
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%)!important;
+} 
+@keyframes fadeInRight {
+    0% {
+       opacity: 0;
+       transform: translateX(100%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ } 
+.seeting{
+    background-color: #1f2528;
+    width: 39px;
+    height: 39px;
+    padding: 10px;
+    position: absolute;
+     top:20%;
+    font-size: large;
+    color:white;
+}
+.scroll{
+    width: 30px;
+    height: 45px;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+.scroll::after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1s infinite;
+}
+
+@keyframes scroll {
+0%{  bottom: 10%;}
+25%{bottom: 20%;}
+50%{bottom: 30%;}
+75%{bottom: 13%;}
+100%{bottom: 10%;}
+}
+.crsr img {
+    width: 100%;
+    
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 50%;
+
+}
+.Signal{
+    
+    left: 0;
+    top: 30%;
+  
+}
+.Signal1{
+    
+    left: 0;
+    top: 35%;
+  
+}
+
+.Signals{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-left: none;
+    background-color: transparent;
+    
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    visibility: visible;
+     animation:fadeInRight 2s infinite ;
+   
+}
+.navbar {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 30px 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-family: "Poppins", sans-serif;
+    
+} 
+
+.skills{
+    background-image: url(..//..//assets/crs3.jpg);
+    width: 100%;
+    height: 500px;
+   
+} 
+.layer{
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(15, 91, 179, 0.7);
+  
+
+}

@@ -1,0 +1,20 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  table{
+      width: 100%;
+  }
+  .mat-form-field{
+      font-size: 14px;
+      width: 100%;
+  }
+  .ab{
+    background-color:  #acbaccc0 !important;
+   
+}
+.btn:hover{
+    background-color:  #acbaccc0 ;
+}
+.btn{
+    text-decoration: none;
+}

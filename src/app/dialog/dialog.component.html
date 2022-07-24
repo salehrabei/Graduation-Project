@@ -1,0 +1,47 @@
+<h1 mat-dialog-title>Add course</h1>
+<div mat-dialog-content>
+
+ <form [formGroup]="courseForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Course Name</mat-label>
+        <mat-select formControlName="courseName" placeholder="Name">
+            <mat-option value="Genetic"> Genetic</mat-option>
+            <mat-option value="Networks"> Networks</mat-option>
+
+            <mat-option value="Cs"> Cs</mat-option>
+
+
+
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Course prof</mat-label>
+        <mat-select  formControlName="courseProf"   placeholder="Name">
+            <mat-option value="Ahmed"> Ahmed</mat-option>
+            <mat-option value="Ali"> Ali</mat-option>
+
+            <mat-option value="Tarek"> Tarek</mat-option>
+
+
+
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label> Group Day</mat-label>
+        <mat-select  formControlName="courseDay" placeholder="Name">
+            <mat-option value="Saturday"> Saturday</mat-option>
+            <mat-option value="Sunday">Sunday</mat-option>
+
+            <mat-option value="Monday"> Monday</mat-option>
+
+
+
+        </mat-select>
+    </mat-form-field>
+ </form>
+     <div mat-dialog-action [align]="'end'">
+         <button  class="btn btn-light "  mat-dialog-close>Close</button>
+         <button class="btn btn-light " (click)="addCourse()">{{actionBtn}}</button>
+
+     </div>
+</div>
